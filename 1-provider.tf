@@ -1,6 +1,10 @@
 provider "aws" {
-  region     = "us-west-2"
-  access_key = "my-access-key"
-  secret_key = "my-secret-key"
+  region     = "ap-south-1"
+  access_key = "AKIA3ISBV2ZXATWPGPOU"
+  secret_key = "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"
 }
 
+resource "aws_instance" "automationserver" {
+  ami           = ami-00bb6a80f01f03502
+  instance_type = "t2.micro"
+}
