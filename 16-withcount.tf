@@ -10,3 +10,17 @@ resource "aws_instance" "web" {
   count = 5
   }
   
+==============================================
+
+User Management - Another Example
+
+provider "aws" {
+  region     = "ap-south-1"
+  access_key = "AKIA3ISBV2ZXIZHR3CBA"
+  secret_key = "H9ixW1Eychi9CcuH2PNGlfPrPZbQq51T6Ub9xkaE"
+}
+
+resource "aws_iam_user" "usermanagement" {
+ name = "automation"
+ count = 5
+}
