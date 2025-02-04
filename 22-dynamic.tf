@@ -1,5 +1,5 @@
 #Repeated block of code
-resource "aws_security_group" “appsg" {
+resource "aws_security_group" "appsg" {
   name        = "appsg01 "
   description = "Allow TCP traffic from 0.0.0.0/0 on specific port range"
   ingress {
