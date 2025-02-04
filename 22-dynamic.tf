@@ -16,10 +16,12 @@ resource "aws_security_group" "appsg" {
   }
 }
 ========================================================================
-#Repeated block of code
+#Dynamic block of code
 variable "ingress_ports" {
  description = "List of ports to allow ingress TCP traffic."
- default     = [8080, 8081]}
+ default     = ["8080", "8081"] 
+ }
+
 resource "aws_security_group" "appsg" {
   name        = "appsg01"
   description = "Allow TCP traffic from 0.0.0.0/0 on specific port range"
