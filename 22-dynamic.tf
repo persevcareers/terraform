@@ -14,6 +14,7 @@ resource "aws_security_group" "appsg" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+}
 ========================================================================
 #Repeated block of code
 variable "ingress_ports" {
