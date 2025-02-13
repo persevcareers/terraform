@@ -9,5 +9,5 @@ resource "aws_instance" "web" {
 
   provisioner "local-exec" {
     command = "echo 'Welcome to automation'"
-  }
+  }  
 }
