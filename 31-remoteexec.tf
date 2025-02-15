@@ -1,4 +1,4 @@
-
+#note chmod 400 pemfile is required in cases of permissions issues on local server
 provider "aws" {
   region     = "ap-south-1"
   access_key = "AKIAYLZZKG25CI677AWM"
