@@ -1,3 +1,4 @@
+# The below deploys one VM with default propoerties
 provider "aws" {
   region     = "us-east-1"
   access_key = "AKIAYLZZKG25CI677AWM"
